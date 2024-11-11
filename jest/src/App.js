@@ -7,6 +7,7 @@ function App() {
       <p>Hi hello namste!</p>
       <p>KemCho</p>
       <img src='' title='Karan'/>
+      <input type='text' placeholder='enter'/>
     </div>
   );
 }

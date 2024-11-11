@@ -1,7 +1,7 @@
 import {render, screen} from "@testing-library/react"
 import App from "./App"
 
-test('should be cheack', () => {
+test('should be cheack33', () => {
   render(<App/>);
   const text = screen.getByText(/Hi hello namste!/i);
   const text2 = screen.getByText(/Kemcho/i);
@@ -11,11 +11,11 @@ test('should be cheack', () => {
   expect(title).toBeInTheDocument()
 })
 
-test("day 4",()=>{
+test("333",()=>{
   render(<App/>);
   const inp = screen.getByRole("textbox");
   const inpPlace = screen.getByPlaceholderText("enter");
   expect(inpPlace).toBeInTheDocument();
   expect(inp).toBeInTheDocument();
-  expect(inp).toHaveAttribute("type","text")
+  expect(inp).toHaveAttribute("type","texxxt")
 })
