@@ -19,3 +19,19 @@ test("day 4",()=>{
   expect(inp).toBeInTheDocument();
   expect(inp).toHaveAttribute("type","text")
 })
+
+describe.skip("describe 1",()=>{
+  test("desceribe checking 1",()=>{
+    render(<App/>);
+    const a = screen.getByRole("textbox");
+    expect(a).toBeInTheDocument;
+  })
+})
+
+describe("describe 2",()=>{
+  test("desceribe checking 2",()=>{
+    render(<App/>);
+    const a = screen.getByRole("textbox");
+    expect(a).toBeInTheDocument;
+  })
+})

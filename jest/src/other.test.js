@@ -17,5 +17,5 @@ test("333",()=>{
   const inpPlace = screen.getByPlaceholderText("enter");
   expect(inpPlace).toBeInTheDocument();
   expect(inp).toBeInTheDocument();
-  expect(inp).toHaveAttribute("type","texxxt")
+  expect(inp).toHaveAttribute("type","text")
 })
