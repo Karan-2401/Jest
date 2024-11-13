@@ -1,5 +1,6 @@
-import {render, screen} from "@testing-library/react"
+import {fireEvent, render, screen} from "@testing-library/react"
 import App from "./App"
+import Day6 from "./Day6";
 
 test('should be cheack', () => {
   render(<App/>);
@@ -34,4 +35,11 @@ describe("describe 2",()=>{
     const a = screen.getByRole("textbox");
     expect(a).toBeInTheDocument;
   })
+})
+
+test("day6",()=>{
+  render(<Day6/>);
+  const Ip = screen.getByRole("textbox");
+  fireEvent.change(Ip,{ target: { value: "a" } })
+  expect(Ip.value).toBe("a")
 })
