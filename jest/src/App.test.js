@@ -43,3 +43,10 @@ test("day6",()=>{
   fireEvent.change(Ip,{ target: { value: "a" } })
   expect(Ip.value).toBe("a")
 })
+
+test("day7",()=>{
+  render(<App/>);
+  const d7 = screen.getByRole("button");
+  fireEvent.click(d7);
+  expect(screen.getByText("Superman").toBeInTheDocument);
+})
