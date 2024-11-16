@@ -1,6 +1,10 @@
 import {render, screen} from "@testing-library/react"
 import App from "./App"
 
+beforeAll(()=>{
+  console.log('beforeall')
+})
+
 test('should be cheack33', () => {
   render(<App/>);
   const text = screen.getByText(/Hi hello namste!/i);
